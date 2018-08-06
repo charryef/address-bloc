@@ -1,12 +1,17 @@
 require_relative 'entry'
 require "csv"
 
-   class AddressBook
-     attr_reader :entries
+class AddressBook
+  attr_reader :entries
 
-     def initialize
-       @entries = []
-     end
+  def initialize
+   @entries = []
+  end
+
+  def demolish
+    @entries = []
+  end
+
 
    def add_entry(name, phone_number, email)
      index = 0
